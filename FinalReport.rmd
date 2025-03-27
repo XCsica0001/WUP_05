@@ -49,6 +49,14 @@ barchartGC(~infected+treatment,data=females,type="percent")
 
 ### Numerical Descriptive Results
 
+```{r}
+table1<- xtabs(~infected+treatment,data=triUmp)
+rowPerc(table1)
+colPerc(table1)
+```
+
+59.3% of the people who got AIDS ended up taking the drug, whereas 40.7% took the placebo.
+
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
 ## Inferential Results
